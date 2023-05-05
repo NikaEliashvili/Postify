@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="freddie-black.png" />
+    <link rel="stylesheet" href="index.css" />
+    <!-- font-awesome fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- fonts from google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Postify</title>
+  </head>
+  <body>
+    <div class="full-content">
+      <header>
+        <img src="freddie-white.png" alt="freddie Icon" class="freddie-img" />
+        <h1>Share positive feedback to your friends</h1>
+      </header>
+      <section class="main-section">
+        <textarea
+          type="text"
+          placeholder="Write your endorsement here"
+          id="text-field"
+          class="text-field flex-basis"
+        ></textarea>
+        <input
+          type="name-from"
+          placeholder="From:"
+          class="name-input-field flex-basis"
+          id="input-from"
+        />
+        <input
+          type="name-to"
+          placeholder="To:"
+          class="name-input-field flex-basis"
+          id="input-to"
+        />
+        <button class="publish-btn" id="publish-btn">Publish</button>
+      </section>
+      <section class="endorsements-section">
+        <h2>- Endorsements -</h2>
+
+        <div id="endorsements-section" class="endorsement-list"></div>
+      </section>
+    </div>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>

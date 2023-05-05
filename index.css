@@ -1,0 +1,184 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    background-color: #1B1924;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    margin: 0;
+}
+
+.full-content {
+    margin: 0 auto;
+    min-width: 390px;
+    max-width: 800px;
+    padding: 0 2rem;
+}
+
+header {
+    display: flex;
+    margin-top: 1.125rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+header h1 {
+    margin-top: 1.25rem;
+    font-weight: 700;
+    font-size: 1.85rem;
+}
+
+.freddie-img {
+    width: 7rem;
+    height: 7rem;
+}
+
+.main-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.56rem;
+
+
+}
+
+::placeholder {
+    color: #9c9c9c;
+}
+
+.flex-basis {
+    flex-basis: 100%;
+}
+
+.text-field,
+.name-input-field {
+    background-color: #444059;
+    border: none;
+    border-radius: 0.5rem;
+    color: #c4c2c2;
+}
+
+
+.text-field {
+    height: 7.5rem;
+    padding: 0.75rem 1.2rem;
+    text-align: left;
+    resize: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    flex-grow: 1;
+}
+
+
+
+.name-input-field {
+    height: 2.5rem;
+    text-align: center;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0;
+    flex-grow: 1;
+}
+
+.publish-btn {
+    flex-grow: 1;
+    padding: 0.6rem;
+    font-family: inherit;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #04131C;
+    background-color: #28A9F1;
+    border: 3px solid #28A9F1;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.publish-btn:hover {
+    background-color: #2864f1;
+    color: #aee3ff;
+
+}
+
+h2 {
+    text-align: center;
+}
+
+.endorsements-section {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.15rem;
+}
+
+.endorsement h3,
+.endorsement p {
+    margin: 0;
+    padding: 0.5rem 0;
+}
+
+.endorsement p {
+    font-size: 0.875rem;
+}
+
+.endorsement {
+    background-color: #a6a7fc;
+    border-radius: 0.2rem;
+    color: #07021c;
+    padding: 0.7rem 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.endorsement-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.likeIcon {
+    color: #ad1515;
+    cursor: pointer;
+}
+
+.likeIcon:focus {
+    animation-name: likeAnim;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+
+@keyframes likeAnim {
+    0% {
+        opacity: 0;
+        color: #2864f1;
+    }
+
+    50% {
+        opacity: .5;
+        color: #28f16b;
+
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes likeAnim1 {
+    0% {
+        opacity: 1;
+    }
+}
+
+.endorsement-container p {
+    user-select: none;
+}
+
+.endorsement-list {
+    display: flex;
+    flex-direction: column-reverse;
+}
